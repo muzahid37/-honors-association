@@ -9,19 +9,17 @@ import {
   Typography,
 } from "@material-ui/core";
 import React from "react";
+import { Box } from "@mui/material";
 const useStyle = makeStyles({
   card: {
     display: "flex",
+    marginTop: "20px",
   },
   cardDetails: {
     flex: 1,
   },
   cardMedia: {
     width: 160,
-  },
-  cardMedia: {
-    backgroundImage:
-      "http://dannci.wpmasters.org/association/wp-content/uploads/2017/02/pokemon-1548194-798x520.jpg",
   },
 });
 
@@ -30,6 +28,15 @@ const Main = () => {
   return (
     <Grid item xs={12} md={8}>
       <CardActionArea component="a">
+        <Box sx={{ borderBottom: 1, borderColor: "#e5e5e5" }}>
+          <Typography component="h3" variant="h4">
+            Community Info
+          </Typography>
+        </Box>
+        <Typography variant="body1" pb={8}>
+          & Recent Happenings
+        </Typography>
+
         <Card className={classes.card}>
           <CardMedia
             component="img"

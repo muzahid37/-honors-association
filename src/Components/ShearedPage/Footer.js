@@ -1,6 +1,5 @@
 // import { Box } from "@material-ui/core";
 import { Box, Stack, Typography } from "@mui/material";
-import { height } from "@mui/system";
 import React from "react";
 
 const Footer = () => {

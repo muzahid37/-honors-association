@@ -8,6 +8,7 @@ import {
   Typography,
 } from "@material-ui/core";
 import React from "react";
+import Activities from "./Activities";
 import Banner from "./Banner";
 import Main from "./Main";
 import SideBar from "./SideBar";
@@ -27,6 +28,7 @@ const Home = () => {
           <Main />
           <SideBar />
         </Grid>
+        <Activities></Activities>
       </Container>
     </div>
   );
